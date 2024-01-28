@@ -13,7 +13,18 @@ class Door {
  		bool isDoorOpen() const;
 		bool isDoorlocked() const;
 	};
- feature/DoorClose
+
+	Door::Door() : isopen(false), isLocked(false) {}
+	void Door::openDoor() {
+    		if (!isLocked) {
+       		 isopen = true;
+       		 cout << "Door is now open." << endl;
+    } else {
+        	cout << "Cannot open the door. It is locked." << endl;
+    }
+}
+
+
 
 void Door::closeDoor() {
     isopen = false;
@@ -23,3 +34,4 @@ void Door::unlock() {
     isLocked = false;
 
 }
+
