@@ -13,7 +13,13 @@ class Door {
  		bool isDoorOpen() const;
 		bool isDoorlocked() const;
 	};
+ feature/DoorClose
+
+void Door::closeDoor() {
+    isopen = false;
+    cout << "Door is now closed." << endl;
+
 void Door::unlock() {
     isLocked = false;
-    cout << "Door is now unlocked." << endl;
+
 }
