@@ -13,3 +13,7 @@ class Door {
  		bool isDoorOpen() const;
 		bool isDoorlocked() const;
 	};
+void Door::unlock() {
+    isLocked = false;
+    cout << "Door is now unlocked." << endl;
+}
